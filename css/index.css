@@ -1,0 +1,48 @@
+.index-contain {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.index-top {
+    width: 80%;
+    height: 3rem;
+    margin: 0 auto;
+    position: relative;
+}
+.index-top p{
+    opacity: 0;
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    font-size: 2rem;
+    line-height: 3rem;
+    text-align: center;
+}
+.index-top p:nth-child(1){
+    color: lightblue;
+}
+.index-top p:nth-child(2){
+    color: lightgreen;
+}
+.index-top p:nth-child(3){
+    color: lightgray;
+}
+.index-top p:nth-child(4){
+    color: lightcoral;
+}
+.index-top-p-animation {
+    animation: pAnimationIn 5s linear forwards;
+    -webkit-animation: pAnimationIn 5s linear forwards;
+}
+@keyframes pAnimationIn{
+    0%{ opacity: 0;}
+    50%{ opacity: 1;}
+    100%{ opacity: 0;}
+}
+@-webkit-keyframes pAnimationIn{
+    0%{ opacity: 0;}
+    50%{ opacity: 1;}
+    100%{ opacity: 0;}
+}
+
