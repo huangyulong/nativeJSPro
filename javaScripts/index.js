@@ -23,6 +23,7 @@ window.onload = function () {
         
     },5000)
     
+    console.log('测试git')
     
 }
 
