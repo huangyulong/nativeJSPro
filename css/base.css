@@ -41,7 +41,9 @@ html,body {
 }
 .button{
     color: white;
-    background-color: lightblue;
+    background-color: #409eff;
+    border: none;
+    border-radius: 4px;
     padding: 0.3rem 1rem;;
 
 }

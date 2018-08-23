@@ -13,7 +13,7 @@
     font-size: 2rem;
     text-align: center;
     text-shadow: 0 0 10px rgba(0,0,0,0.8);
-    color: lightblue;
+    color: #666666;
 }
 .login-contain>form{
     width: 100%;
@@ -27,12 +27,15 @@
     border-radius: 4px;
     width: 80%;
     height: 2rem;
+    margin-top: 1rem;
 }
 .login-save{
     width: 100%;
+    margin-top: 1rem;
     text-align: right;
 }
 .login-button{
     width: 100%;
+    margin-top: 1rem;
     text-align: right;
 }
