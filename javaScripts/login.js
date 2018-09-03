@@ -69,4 +69,41 @@ function clearCookie(){
     cookie = ''
     // setCookie(name, '', -1)
 }
+//'http://localhost:3000/getUsers'
+function ajaxGet(url){
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.open('GET',url,true);
+    // xmlhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+    xmlhttp.send();
+
+}
+function ajaxPost(url, data){
+    var xmlHttp = new XMLHttpRequest();
+  
+
+}
+var getUser = document.getElementById('getUsers');
+getUser.onclick=function(){
+    // ajaxGet();
+    var xmlHttp = new XMLHttpRequest();
+    xmlHttp.open('GET','http://localhost:3000/getUsers', true);
+    xmlHttp.setRequestHeader('Content-type','application/json');
+    // var postData = JSON.stringify(data);
+    xmlHttp.onreadystatechange = function(){
+        if(xmlHttp.readyState === 4 && xmlHttp.status === 200){
+            var data = xmlHttp.responseText
+            console.log(data);
+        }
+    }
+    xmlHttp.send();
+    // console.log(responseText)
+    // var promise = new Promise(function(resolve, reject){
+
+    // });
+    // promise.then(function(res){
+
+    // },function(err){
+
+    // })
+}
 
