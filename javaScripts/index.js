@@ -4,7 +4,7 @@ window.onload = function () {
     let topP = topAnimation.children;
     let num = 0;
    
-    topP[0].setAttribute('class','index-top-p-animation')
+    topP[0].setAttribute('class','index-top-p-animation');
     num ++;
     timer = setTimeout(function(){
         if(num === 0){
@@ -19,7 +19,7 @@ window.onload = function () {
             topP[num].setAttribute('class','index-top-p-animation');
         }
         num++;
-        setTimeout(arguments.callee, 5000)
+        setTimeout(arguments.callee, 5000);
         
     },5000)
     
